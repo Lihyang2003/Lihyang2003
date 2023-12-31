@@ -33,13 +33,13 @@
                   <a class="nav-link" href="Trangchu.html" id="first">Trang chủ</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="thucdon.css" id="second">Thực đơn</a>
+                  <a class="nav-link" href="thucdon.html" id="second">Thực đơn</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="gioithieu.html" id="third">Giới thiệu</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#" id="fourth">Tin tức</a>
+                  <a class="nav-link" href="#" id="fourth">Đánh giá</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="lienhe.html" id="fiveth">Liên hệ</a>
@@ -54,4 +54,172 @@
             <a class="navbar-profile" href="profile.html" id="profile" style="font-size: 40px;"><ion-icon name="person-circle-outline"></ion-icon></a>
         </nav>
     </div>
+    <div class="container">
+      <div class="danhgia">
+      <h1 style="font-weight: bold; font-size: 3em; color: rgb(255,166,0);">Đánh giá đồ ăn</h1>
+      
+      <div class="reviews">
+        <h2 style="font-weight: bold;">Đánh giá từ khách hàng</h2><br>
+        <ul id="reviewList">
+          <li>
+            <div class="review">
+              <div class="reviewi">
+                <div class="reviewerInfo">
+                  <img src="./images/khach 1.jpg" alt="Avatar" class="avatar">
+                  <h3>John Doe</h3>                       
+                </div> 
+                <div class="rating">
+                  ⭐⭐⭐⭐⭐
+                </div>
+              </div> 
+              <hr style="width: 30%;size:50px; color:black; ">            
+              <p class="comment">
+                "Là một người dân Mỹ du lịch Việt Nam, tôi rất bất ngờ về chất lượng của Burger tại nhà hàng".</p>
+            </div>
+          </li>
+          <li>
+            <div class="review">
+              <div class="reviewi">
+                <div class="reviewerInfo">
+                  <img src="./images/khach 2.jpg" alt="Avatar" class="avatar">
+                  <h3>Googs Paton</h3>                       
+                </div> 
+                <div class="rating">
+                  ⭐⭐⭐⭐
+                </div>
+              </div> 
+              <hr style="width: 30%;size:50px; color:black; ">                
+              <p class="comment">
+                "Sinh sống và làm việc tại Việt Nam hơn 5 năm nay, đây là nhà hàng Burger mà tôi yêu thích nhất!".</p>
+            </div>
+          </li>
+          <li>
+            <div class="review">
+              <div class="reviewi">
+                <div class="reviewerInfo">
+                  <img src="./images/khach 3.jpg" alt="Avatar" class="avatar">
+                  <h3>Mohammed</h3>                       
+                </div> 
+                <div class="rating">
+                  ⭐⭐⭐⭐
+                </div>
+              </div>  
+              <hr style="width: 30%;size:50px; color:black; ">               
+              <p class="comment">
+                "Nếu có cơ hội được trở lại Việt Nam, tôi chắc chắn sẽ quay lại thưởng thức đồ ăn ngay tại nhà hàng này."</p>
+            </div>
+          </li>
+          <li>
+            <div class="review">
+              <div class="reviewi">
+                <div class="reviewerInfo">
+                  <img src="./images/khach 4.jpg" alt="Avatar" class="avatar">
+                  <h3>Scott Mac</h3>                       
+                </div> 
+                <div class="rating">
+                  ⭐⭐⭐⭐⭐
+                </div>
+              </div> 
+              <hr style="width: 30%;size:50px; color:black; ">                
+              <p class="comment">
+                "HanseBurger chưa bao giờ làm tôi thất vọng về đồ ăn, thực sự Burger ở đây rất ngon."</p>
+            </div>
+          </li>
+          <li>
+            <div class="review">
+              <div class="reviewi">
+                <div class="reviewerInfo">
+                  <img src="./images/khach 5.jpg" alt="Avatar" class="avatar">
+                  <h3>Matthew Paul</h3>                       
+                </div> 
+                <div class="rating">
+                  ⭐⭐⭐⭐
+                </div>
+              </div>  
+              <hr style="width: 30%;size:50px; color:black; ">               
+              <p class="comment">
+                "Đây luôn là điểm hẹn gặp gỡ của tôi và bạn tôi mỗi khi cả hai muốn ăn một bữa Burger ngon miệng."</p>
+            </div>
+          </li>
+        </ul>
+        
+      </div>
+  
+      <form id="addReviewForm">
+          <div class="form-group">
+            <h2 style="font-weight: bold;;">Thêm đánh giá của bạn</h2>
+            <label for="reviewerName">Tên:</label>
+            <input type="text" class="form-control" id="reviewerName" placeholder="Nhập tên của bạn">
+          </div>
+          <div class="form-group">
+            <label for="reviewRating">Đánh giá:</label>
+            <div class="rating" onmouseleave="resetRating()">
+              <span class="star" onmouseover="highlightStars(1)" onclick="setRating(1)">&#9733;</span>
+              <span class="star" onmouseover="highlightStars(2)" onclick="setRating(2)">&#9733;</span>
+              <span class="star" onmouseover="highlightStars(3)" onclick="setRating(3)">&#9733;</span>
+              <span class="star" onmouseover="highlightStars(4)" onclick="setRating(4)">&#9733;</span>
+              <span class="star" onmouseover="highlightStars(5)" onclick="setRating(5)">&#9733;</span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="reviewComment">Bình luận:</label>
+            <textarea class="form-control" id="reviewComment" rows="3" placeholder="Nhập bình luận của bạn"></textarea>
+          </div>
+
+            <button type="submit" class="gui">Gửi đánh giá</button>
+
+          
+        </form>
+      </div>
+    </div>
+  <script href="tintuc.js"></script>
+   
+
+
+  </section>
+  <section class="footer">
+    <div class="footer-row">
+      <div class="footer-content" style="padding-left: 40px;">
+        <h4><span class="hanse"><a class="tc" href="Trangchu.html">HanseBurger</a> </span></h4>
+        <ul class="links">
+          <li style="padding-left: 50px;"><a href="Trangchu.html">Trang chủ</a></li>
+          <li style="padding-left: 50px;"><a href="thucdon.html">Thực đơn</a></li>
+          <li style="padding-left: 50px;"><a href="gioithieu.html">Giới thiệu</a></li>
+          <li style="padding-left: 50px;"><a href="tintuc.html">Đánh giá</a></li>
+          <li style="padding-left: 50px;"><a href="lienhe.html">Liên hệ</a></li>
+        </ul>
+      </div>
+      <div class="footer-content">
+        <h4>Chính sách<h4>
+        <ul class="links" >
+          <li><a href="#">Chính sách giao hàng</a></li>
+          <li><a href="#">Chính sách thanh toán</a></li>
+          <li><a href="#">Chính sách đổi trả</a></li>
+          <li><a href="#">Chính sách kiểm hàng</a></li>
+          <li><a href="#">Chính sách bảo mật thông tin</a></li>
+        </ul>
+      </div>
+      <div class="footer-content" style="padding-right: 50px;">
+        <h4>Liên hệ</h4>
+        <div class="lienhe">
+          <ion-icon name="mail-outline"></ion-icon>
+          <span class="lh">hello@hanseburger.co</span>
+        </div>
+        <div class="lienhe1">
+          <ion-icon name="call-outline"></ion-icon>
+          <span class="lh">1900111122</span>
+        </div>
+        <div class="icons">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-tiktok"></i>
+        </div>
+      </div>
+    </div>
+    <div class="copy">
+      &copy; Copyright <strong>HanseBurger</strong>. All Rights Reserved
+    </div>
+  </section>
 </body>
+
+</html>
