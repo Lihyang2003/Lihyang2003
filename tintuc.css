@@ -21,6 +21,7 @@
     z-index: 999;
     background-color: black;
     position:fixed;
+    top:0px;
     right:0px;
     left:0px;
 }
@@ -76,4 +77,225 @@
 }
 #fourth{
     border-bottom: 3px solid rgba(255,166,0);
+}
+
+body{
+     background-image: url(./images/bgdg.jpg);
+     background-size: cover;
+}
+.danhgia {
+   
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 90px;
+    padding: 20px;
+    text-align: center;
+    background: tr;
+
+}
+  
+  .form {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+ .form-group input[type="text"],
+  input[type="number"],
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+  
+
+  
+  .gui:hover {
+    background-color: rgb(255, 166, 0);
+  }
+  
+  .reviews {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding-top: 20px;
+    margin-top:50px;
+    background-color: rgb(243, 224, 189);
+  }
+  .gui {
+    width: 100%;
+    height: 40px;
+    background: #4e1313;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: rgb(250, 245, 245);
+    font-weight: bolder;
+    font-size: 20px;
+ }
+  ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+  }
+  
+ #reviewList li {
+    margin-bottom: 15px;
+  }
+  /* Thêm CSS để điều chỉnh kiểu dáng của form nếu cần thiết */
+#addReviewForm {
+    max-width: 400px;
+    margin: 0 auto;
+}
+  
+.form-group {
+    margin-bottom: 15px;
+}
+  
+label {
+    font-weight: bold;
+}
+  
+textarea {
+    resize: vertical;
+}
+  
+  
+.review {
+    margin: 20px;;
+    border: 1px solid #ccc;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    background-color: white;
+}
+.reviewerInfo {
+    padding:20px;
+    display: flex;
+    gap:10px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.reviewerInfo  h3{
+    font-size: 20px;
+}
+.reviewi{
+    display: flex;
+    gap: 300px;
+    align-items:center;
+}
+  
+.avatar {
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%;
+    object-fit: cover; 
+    margin-right: 10px; 
+    float: left;
+}
+.comment{
+    padding:10px;
+}
+  
+  .star {
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .highlighted {
+    color: gold; 
+  }
+  .clicked {
+    color: gold; 
+  }
+  #addReviewForm{
+    background-color: white;
+    padding:10px;
+    margin-top: 40px;
+    border-radius: 15px;
+    border: 2px solid black;
+    max-width: 400px;
+    max-height: 500px;
+    
+  }
+  
+
+
+
+.footer{
+    background: black;
+    bottom:0px;
+    margin-top: 30px;
+    padding-top:30px;
+    padding-bottom: 10px;
+}
+.footer .footer-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+    padding:10px;
+    padding-top: 0px;
+}
+.footer-content .tc{
+    text-decoration: none;
+    font-weight: 1000;
+    font-size: larger;
+    color: orange;
+}
+.footer-row .footer-content h4{
+    color: orange;
+    font-size: 1.2 rem;
+    font-weight: bold;
+}
+.footer-content .links{
+    margin-top: 20px;
+}
+.footer-content .links li {
+    list-style: none;
+    margin-bottom: 10px;
+
+}
+.footer-content .links li a{
+    text-decoration: none;
+    color: #bfbfbf;
+    font-size: 16px;
+    font-weight: bold;
+}
+.footer-content .links li a:hover{
+    color: white;
+}
+.footer-content .icons{
+    display: flex;
+    margin-top: 30px;
+    gap:30px;
+    cursor: pointer;
+}
+.footer-content .icons i{
+    color:white;
+}
+.footer-content .icons i:hover{
+    color:orange;
+}
+.footer .copy{
+    color: #fffefe;
+    justify-content: center;
+    padding-bottom: 30px;
+    padding-left: 38vw;
+}
+.footer-content .lienhe{
+    margin-top: 20px;
+}
+.footer-content .lienhe1{
+    margin-top: 10px;
+}
+
+.footer-content .lh{
+    color:white;
+}
+.footer-content .lienhe{
+    color: white;
+}
+.footer-content .lienhe1{
+    color: white;
 }
