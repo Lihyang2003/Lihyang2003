@@ -103,6 +103,12 @@
     letter-spacing: 3px;
     color: rgb(255, 166, 0)
 }
+#burgertotnhat{
+    backdrop-filter: blur(20px);
+    border-style:dashed;
+    background-color: rgb(241, 236, 223);
+    padding-bottom:20px;
+}
 #btn1 button{
     color: aliceblue;
     width: 300px;
@@ -122,6 +128,9 @@
                  0 0 50px rgba(255,166,0);
                 color: black;
 }
+.tieude{
+    color: rgb(255, 166, 0)
+}
 .tieude1 {
     justify-content: center;
     margin-top: 50px;
@@ -133,6 +142,7 @@
 }
 .container{
     z-index: 998;
+
 }
 .card{
     box-shadow: 0px 0px 5px black;
@@ -154,6 +164,17 @@
     font-weight:lighter;
     color: rgb(0, 0, 0);
     text-shadow: 2px 1px 5px rgb(154, 154, 154);
+}
+.totnhat{
+    text-decoration: none;
+    color: rgb(21, 21, 21);
+    font-weight: bold;
+    transition: 0.2s ease;
+ 
+}
+.totnhat:hover{
+     color: rgb(255, 166, 0);
+
 }
 .container{
     z-index:-1;
@@ -218,23 +239,78 @@
 
 
 
-#footer{
-    background-color: black;
-    padding: 40px 0;
-    font-size: 14px;
-    margin-top: 50px;
+.footer{
+    background: black;
+    bottom:0px;
+    margin-top: 100px
+   
 }
-#footer .footer-links a{
-    color: white;
+.footer .footer-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+    padding:20px;
+}
+.footer-content .tc{
+    text-decoration: none;
+    font-weight: 1000;
+    font-size: larger;
+    color: orange;
+}
+.footer-row .footer-content h4{
+    color: orange;
+    font-size: 1.2 rem;
     font-weight: bold;
-    padding-left: 15px;
 }
-#footer .footer-links a:first-child{
-    padding-left: 0;
+.footer-content .links{
+    margin-top: 20px;
 }
-#footer .footer-links a:hover{
-    color: rgba(255,166,0);
+.footer-content .links li {
+    list-style: none;
+    margin-bottom: 10px;
+
 }
-.copyright{
+.footer-content .links li a{
+    text-decoration: none;
+    color: #bfbfbf;
+    font-size: 16px;
+    font-weight: bold;
+}
+.footer-content .links li a:hover{
+    color: white;
+}
+.footer-content .icons{
+    display: flex;
+    margin-top: 30px;
+    gap:30px;
+    cursor: pointer;
+}
+.footer-content .icons i{
+    color:white;
+}
+.footer-content .icons i:hover{
+    color:orange;
+}
+.footer .copy{
+    color: #fffefe;
+    justify-content: center;
+    padding-bottom: 30px;
+    padding-left: 38vw;
+}
+.footer-content .lienhe{
+    margin-top: 20px;
+}
+.footer-content .lienhe1{
+    margin-top: 10px;
+}
+
+.footer-content .lh{
+    color:white;
+}
+.footer-content .lienhe{
+    color: white;
+}
+.footer-content .lienhe1{
     color: white;
 }
